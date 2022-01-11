@@ -4,16 +4,17 @@ Objective 2:  The robot will sound the alarm.
 Objective 3: The robot will distinguish between intruders and authorized individuals.
 Objective 4: The cost of producing the robot will be affordable.
 Objective 5: The robot has autonomous navigation capabilities.
-Req No.
-Obj No.
-Requirement
+
+
+Requirement:
+
 0.1
 The robot shall include an on-board display of at least 200 pixels by 200 pixels
+
 0.1.1
-
 The on-board display shall be less than 100mm x 55mm x 30mm
-0.1.2
 
+0.1.2
 The on-board display shall show the current Eastern Standard Time (EST)
 0.2
 
