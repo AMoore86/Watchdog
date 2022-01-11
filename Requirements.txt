@@ -1,0 +1,87 @@
+Design Requirements
+Objective 1: The objective of this project is to produce a home security robot.
+Objective 2:  The robot will sound the alarm.
+Objective 3: The robot will distinguish between intruders and authorized individuals.
+Objective 4: The cost of producing the robot will be affordable.
+Objective 5: The robot has autonomous navigation capabilities.
+Req No.
+Obj No.
+Requirement
+0.1
+The robot shall include an on-board display of at least 200 pixels by 200 pixels
+0.1.1
+
+The on-board display shall be less than 100mm x 55mm x 30mm
+0.1.2
+
+The on-board display shall show the current Eastern Standard Time (EST)
+0.2
+
+The robot shall include wireless communication with an application
+0.2.1
+
+The robot shall send an alert to the user if an unauthorized individual is detected
+0.2.2
+
+The robot shall send alerts to the user through the application
+0.2.3
+
+The robots controlling application shall at least be operable on Windows personal computers running the Windows 10 Operating System
+0.2.4
+
+The robot shall receive pictures of authorized individuals from the user through the application
+0.2.5
+
+The application shall allow the user to turn off the alarm
+0.2.6
+
+The application shall allow the user to turn the light on and off
+0.3
+
+The robot shall include a camera
+0.3.1
+
+The robot shall use facial recognition to identify authorized individuals
+0.4
+
+The robot shall include at least two detection sensors
+0.4.1
+
+The robot shall include at least two audio sensors
+0.4.2
+
+The robot shall include at least one obstacle avoidance sensor
+
+0.5
+The robot shall include an aural alarm of at most 80 decibels
+
+0.6
+The robot shall include a light of at least 5 lumens and at most 1000 lumens
+
+0.6.1
+The light shall turn on when attempting to identify authorized individuals
+
+0.6.2
+The light shall remain on until the robot verifies whether the individual is authorized or unauthorized
+
+0.6.3
+The light shall turn off if an authorized individual is identified
+
+0.6.4
+The light shall remain on if an unauthorized individual is detected until the user turns off the light or the power source is drained
+
+0.7
+The robot shall move by autonomously navigating toward sources of noise
+
+1.0
+The robot shall operate independently of any tethered power source
+
+2.0
+The robot shall have an Ingress Protection Code (IP) rating of at least IP10 in accordance with IEC 60529
+
+2.1
+The robot shall conform to Part 15 of the FCC rules
+
+2.2
+All design specification artifacts for the robot shall conform to Wright State University EE-4910/CEG-4980 Design Specification Template.
+
