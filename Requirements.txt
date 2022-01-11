@@ -1,4 +1,5 @@
-Design Requirements
+Design Requirements:
+
 Objective 1: The objective of this project is to produce a home security robot.
 Objective 2:  The robot will sound the alarm.
 Objective 3: The robot will distinguish between intruders and authorized individuals.
@@ -16,41 +17,41 @@ The on-board display shall be less than 100mm x 55mm x 30mm
 
 0.1.2
 The on-board display shall show the current Eastern Standard Time (EST)
+
 0.2
-
 The robot shall include wireless communication with an application
+
 0.2.1
-
 The robot shall send an alert to the user if an unauthorized individual is detected
+
 0.2.2
-
 The robot shall send alerts to the user through the application
+
 0.2.3
-
 The robots controlling application shall at least be operable on Windows personal computers running the Windows 10 Operating System
+
 0.2.4
-
 The robot shall receive pictures of authorized individuals from the user through the application
+
 0.2.5
-
 The application shall allow the user to turn off the alarm
+
 0.2.6
-
 The application shall allow the user to turn the light on and off
+
 0.3
-
 The robot shall include a camera
+
 0.3.1
-
 The robot shall use facial recognition to identify authorized individuals
+
 0.4
-
 The robot shall include at least two detection sensors
+
 0.4.1
-
 The robot shall include at least two audio sensors
-0.4.2
 
+0.4.2
 The robot shall include at least one obstacle avoidance sensor
 
 0.5
@@ -85,4 +86,15 @@ The robot shall conform to Part 15 of the FCC rules
 
 2.2
 All design specification artifacts for the robot shall conform to Wright State University EE-4910/CEG-4980 Design Specification Template.
+
+
+
+
+
+
+
+
+
+
+
 
