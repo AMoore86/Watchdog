@@ -1,7 +1,7 @@
 Design Requirements:
 
 Objective 1: The objective of this project is to produce a home security robot.
-Objective 2:  The robot will sound the alarm.
+Objective 2: The robot will sound the alarm.
 Objective 3: The robot will distinguish between intruders and authorized individuals.
 Objective 4: The cost of producing the robot will be affordable.
 Objective 5: The robot has autonomous navigation capabilities.
