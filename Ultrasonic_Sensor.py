@@ -1,3 +1,4 @@
+
 #Ultrasonic Sensor Code for Two Sensors
 
 #Libraries
@@ -36,7 +37,10 @@ time.sleep(2)
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Set TRIG to HIGH (True)
 GPIO.output(TRIG, True)
+
+# Set TRIG after 0.01ms to LOW (False)
 time.sleep(0.00001)
 GPIO.output(TRIG, False)
 
@@ -44,44 +48,82 @@ GPIO.output(TRIG, False)
 
 print ("Reading")
 
+# Save StartTime
 while GPIO.input(ECHO)==0:
     pulse_start = time.time()
+    
+# Save time of arrival
 while GPIO.input(ECHO)==1:
     pulse_end = time.time()
     
+    
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Calculate distance by using Speed = [Distance / Time]
+# 343m/s is speed of sound at sea level
+# 34300 = [Distance / (Time / 2)]
+# 17150 = [Distance / Time]
+# 17150 * Time = Distance
+
+# Time Difference between start and arrival 
 pulse_duration = pulse_end - pulse_start
+
+# Multiply with the sonic speed 
 distance = pulse_duration * 17150
+
+# Round Distance to two decimal places 
 distance = round(distance, 2)
+
+# Print Distance of Ultrasonic 1
 print("Distance Sensor 1:", distance, "cm")
 print ("Waiting For Sensor 2 To Send Signal")
 time.sleep(2)
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Set TRIG1 to HIGH (True)
 GPIO.output(TRIG1, True)
+
+# Set TRIG1 after 0.01ms to LOW (False)
 time.sleep(0.00001)
 GPIO.output(TRIG1, False)
 print ("Reading Sensor 2")
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Save StartTime
 while GPIO.input(ECHO1)==0:
     pulse_start = time.time()
+    
+# Save time of arrival
 while GPIO.input(ECHO1)==1:
     pulse_end = time.time()
     
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Calculate distance by using Speed = [Distance / Time]
+# 343m/s is speed of sound at sea level
+# 34300 = [Distance / (Time / 2)]
+# 17150 = [Distance / Time]
+# 17150 * Time = Distance
+
+# Time Difference between start and arrival 
 pulse_duration = pulse_end - pulse_start
+
+# Multiply with the sonic speed 
 distance = pulse_duration *17150
+
+# Round Distance to two decimal places 
 distance = round(distance, 2)
+
+# Print Distance of Ultrasonic 2
 print ("Distance Sensor 2:", distance, "cm")
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 GPIO.cleanup()
+
+
 
 
 
