@@ -1,0 +1,17 @@
+
+Connecting Two Ultra-Sonic Sensors
+
+	Ultra-Sonic Sensor 1:
+		Pin 2 for 5V Vcc
+		Pin 6 for GND
+		Pin 16 for Trig
+		Pin 18 for Echo
+			Use 1k ohm and 2k ohm (two 1k ohm in series)
+		
+	Ultra-Sonic Sensor 2:
+		Pin 4 for 5V Vcc
+		Pin 34 for GND
+		Pin 38 for Trig
+		Pin 40 for Echo
+			Use 1k ohm and 2k ohm (two 1k ohm in series)
+			
