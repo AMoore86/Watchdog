@@ -74,12 +74,12 @@ distance1 = pulse_duration * 17150
 # Round Distance to two decimal places 
 distance1 = round(distance1, 2)
 
-get Dist1 ():
+def getDist1 ():
     return distance1
 
 
 # Print Distance of Ultrasonic 1
-print("Distance Sensor 1:", distance, "cm")
+print("Distance Sensor 1:", distance1, "cm")
 print ("Waiting For Sensor 2 To Send Signal")
 time.sleep(2)
 
@@ -120,11 +120,11 @@ distance2 = pulse_duration *17150
 # Round Distance to two decimal places 
 distance2 = round(distance2, 2)
 
-get Dist2():
+def getDist2():
     return distance2
 
 # Print Distance of Ultrasonic 2
-print ("Distance Sensor 2:", distance, "cm")
+print ("Distance Sensor 2:", distance2, "cm")
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
