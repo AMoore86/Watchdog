@@ -12,7 +12,7 @@ GPIO.setwarnings(False)
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Set GPIO Pins
-TRIG = 20
+TRIG = 16
 ECHO = 21
 TRIG1 = 23
 ECHO1 = 24
@@ -69,10 +69,14 @@ while GPIO.input(ECHO)==1:
 pulse_duration = pulse_end - pulse_start
 
 # Multiply with the sonic speed 
-distance = pulse_duration * 17150
+distance1 = pulse_duration * 17150
 
 # Round Distance to two decimal places 
-distance = round(distance, 2)
+distance1 = round(distance1, 2)
+
+get Dist1 ():
+    return distance1
+
 
 # Print Distance of Ultrasonic 1
 print("Distance Sensor 1:", distance, "cm")
@@ -111,15 +115,23 @@ while GPIO.input(ECHO1)==1:
 pulse_duration = pulse_end - pulse_start
 
 # Multiply with the sonic speed 
-distance = pulse_duration *17150
+distance2 = pulse_duration *17150
 
 # Round Distance to two decimal places 
-distance = round(distance, 2)
+distance2 = round(distance2, 2)
+
+get Dist2():
+    return distance2
 
 # Print Distance of Ultrasonic 2
 print ("Distance Sensor 2:", distance, "cm")
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 GPIO.cleanup()
 
